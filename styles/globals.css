@@ -24,3 +24,40 @@ a {
     background: black;
   }
 }
+
+/* ------------------------------- Flex */
+
+.glo_Flex_Column {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+}
+
+/* ------------------------------- size */
+
+.glo_Width_10rem {
+  width: 10rem;
+}
+/* ------------------------------- table */
+.g_table_th {
+  color: white;
+}
+
+/* ------------------------------- button */
+
+.btn_normal {
+  background-color: green;
+  color: white;
+
+  border-radius: 0.5rem;
+
+  transition: 250ms ease-in-out;
+
+  cursor: pointer;
+}
+
+.btn_normal:hover {
+  background-color: rgb(0, 167, 0);
+  color: white;
+}
