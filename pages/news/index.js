@@ -21,7 +21,7 @@ export async function getServerSideProps() {
   const data = await res.json();
 
   // console.log("data", data);
-  console.log("pre-rendring news");
+  // console.log("pre-rendring news");
 
   return {
     props: {

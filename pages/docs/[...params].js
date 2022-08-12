@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 export default function X() {
   const router = useRouter();
   const { params = [] } = router.query;
-  console.log("params", params);
+  // console.log("params", params);
   return (
     <div>
       <h1>{`length : ${params?.length}`}</h1>

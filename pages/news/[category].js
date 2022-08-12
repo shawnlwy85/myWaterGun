@@ -18,7 +18,7 @@ export async function getServerSideProps(context) {
   const { category } = params;
   const res = await fetch(`https://jsonplaceholder.typicode.com/users`);
   const data = await res.json();
-  console.log("pre-rendring category", category);
+  // console.log("pre-rendring category", category);
   return {
     props: {
       data: data?.filter((x) => {

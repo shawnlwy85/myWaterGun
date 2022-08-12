@@ -71,10 +71,10 @@ export default function Page_ManageUser() {
   const reloadBD = async () => {
     const data = await getDocs(usersCollectionRef);
     setUsers(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
-    console.log(
-      "Data",
-      data.docs.map((doc) => ({ ...doc.data(), id: doc.id }))
-    );
+    // console.log(
+    //   "Data",
+    //   data.docs.map((doc) => ({ ...doc.data(), id: doc.id }))
+    // );
   };
 
   useEffect(() => {
