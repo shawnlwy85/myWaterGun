@@ -18,7 +18,7 @@ import {
   onAuthStateChanged,
 } from "firebase/auth";
 
-export default function Check_FB_DB_Auth() {
+function Check_FB_DB_Auth() {
   // --------------------------------------- use context
   const contextValue = useContext(UserContext);
 
