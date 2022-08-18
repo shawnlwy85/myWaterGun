@@ -2,13 +2,13 @@ import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
-import useFirebase from "./Hooks/useFirebase";
+import useFirebase from "../Hooks/useFirebase";
 
 import { Button } from "@mantine/core";
 
 import Image from "next/image";
 
-import Test from "./Hooks/Test";
+import Test from "../Hooks/Test";
 import Page_Login from "./Page_Login";
 import Page_ManageUser from "./Page_ManageUser";
 

@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef, useContext } from "react";
-import { UserContext } from "../../UserContext";
+import { UserContext } from "../UserContext";
 
 // import moment from "moment";
 // import axios from "axios";
@@ -9,7 +9,7 @@ import { Button } from "@mantine/core";
 import { FcGoogle as GoogleIcon } from "react-icons/fc";
 import { FaFacebookSquare as FacebookIcon } from "react-icons/fa";
 // -------------------------------------------------  firebase - 1/2
-import { authentication } from "../../firebase-config";
+import { authentication } from "../firebase-config";
 import {
   signInWithPopup,
   GoogleAuthProvider,
@@ -20,7 +20,7 @@ import {
 
 function Check_FB_DB_Auth() {
   // --------------------------------------- use context
-  const contextValue = useContext(UserContext);
+  // const contextValue = useContext(UserContext);
 
   // -------------------------------------------------  firebase - 2/2
   const [firebase_userInfo, setFirebase_userInfo] = useState({});
@@ -77,7 +77,7 @@ function Check_FB_DB_Auth() {
     // }
 
     // console.log("firebase_user_SignedIn", firebase_user_SignedIn);
-    contextValue.firebase_UserInfo = firebase_userInfo;
+    // contextValue.firebase_UserInfo = firebase_userInfo;
 
     if (firebase_user_SignedIn === false) {
       window.location = "/#/Page_Login";

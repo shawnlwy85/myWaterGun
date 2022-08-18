@@ -3,7 +3,7 @@ import React, { useEffect, useState, useRef, useContext } from "react";
 // import axios from "axios";
 
 // import { UserContext } from "../../UserContext";
-import useFirebase from "./Hooks/useFirebase";
+import useFirebase from "../Hooks/useFirebase";
 import { Button } from "@mantine/core";
 
 // import { Button } from "@material-ui/core";
